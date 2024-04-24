@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+      background-color: #353434;
+  }
+  .navbar {
+    width: 100vw;
+    height: 8vh;
+    background-color: #1a1919;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .leftpart {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .mynotes {
+    height: 100%;
+    font-size: larger;
+    color: white;
+    background-color: #1a1919;
+    border-color: #1a191900;
+    padding: 8px;
+  }
+  .leftpart :hover {
+    background-color: #343333;
+  }
+  .home {
+    height: 100%;
+    font-size: larger;
+    color: white;
+    background-color: #1a1919;
+    border-color: #1a191900;
+    padding: 8px;
+  }
+  .about {
+    height: 100%;
+    font-size: larger;
+    color: white;
+    background-color: #1a1919;
+    border-color: #1a191900;
+    padding: 8px;
+  }
+  .login {
+    height: 100%;
+    font-size: larger;
+    color: white;
+    background-color: #1a1919;
+    border-color: #1a191900;
+    padding: 8px;
+  }
+  .signup {
+    height: 100%;
+    font-size: larger;
+    color: white;
+    background-color: #1a1919;
+    border-color: #1a191900;
+    padding: 8px;
+  }
+  .rightpart :hover {
+    background-color: #343333;
+  }
+  .logincardcontainer {
+    width: 100vw;
+    height: 89vh;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logincard {
+    background-color: #222121;
+    height: 60%;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Google Sans, Helvetica Neue, sans-serif;
+  }
+  .username{
+      width: 20vw;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: #353434;
+      border-color: #1a191900;
+      color: white;
+      font-size: 15px;
+      margin: 2px;
+  }
+  .email{
+      width: 20vw;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: #353434;
+      border-color: #1a191900;
+      color: white;
+      font-size: 15px;
+      margin: 2px;
+  }
+  .password{
+      width: 20vw;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: #353434;
+      border-color: #1a191900;
+      color: white;
+      font-size: 15px;
+      margin: 2px;
+  }
+  .submit_btn{
+      width: 8vw;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: #353434;
+      border-color: #1a191900;
+      color: white;
+      font-size: 15px;
+      margin: 2px;
+  }
+  .submitbtn :hover{
+      cursor: pointer;
+      background-color: #474545;
+  }
+  #signup_status span{
+    font-size: 25px;
+    color: red;
+  }
+  
