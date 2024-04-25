@@ -159,4 +159,19 @@ body{
   text-decoration: none;
   color: rgb(16, 119, 237);
 }
+@media (max-width: 745px){
+  .logincard{
+    height: 100%;
+    width: 100%;
+  }
+  .email{
+    width: 50vw;
+  }
+  .password{
+    width: 50vw;
+  }
+  .submit_btn{
+    width: 60px;
+  }
+}
  
