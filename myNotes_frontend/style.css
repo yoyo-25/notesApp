@@ -126,6 +126,7 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .forprofilepic{
     display: flex;
@@ -271,3 +272,6 @@ textarea#notes::-webkit-scrollbar {
     font-family: Google Sans, Helvetica Neue, sans-serif;
     word-wrap: break-word;
 }
+@media (max-width: 945px){
+
+  }
