@@ -63,6 +63,12 @@
     border-color: #1a191900;
     padding: 8px;
   }
+  .rightpart{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
   .rightpart :hover {
     background-color: #343333;
   }
