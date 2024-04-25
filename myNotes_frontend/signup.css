@@ -150,4 +150,23 @@
     font-size: 25px;
     color: red;
   }
+  @media (max-width: 745px){
+    .logincard{
+      height: 100%;
+      width: 100%;
+    }
+    .username{
+      width: 50vw;
+    }
+    .email{
+      width: 50vw;
+    }
+    .password{
+      width: 50vw;
+    }
+    .submit_btn{
+      width: 60px;
+    }
+  }
+   
   
