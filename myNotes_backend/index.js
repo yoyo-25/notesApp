@@ -179,5 +179,5 @@ app.get('/getnotes/:emailId', async (req,res)=>{
 })
 
 app.listen(port, () => {
-  console.log(`this app is running on port http://localhost:${port}`);
+  console.log(`this app is running on https://notesapp-o3mu.onrender.com`);
 });

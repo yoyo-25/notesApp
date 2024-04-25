@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = passwordInput.value;
 
       try {
-        const response = await fetch("http://localhost:4000/logindata", {
+        const response = await fetch("https://notesapp-o3mu.onrender.com/logindata", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

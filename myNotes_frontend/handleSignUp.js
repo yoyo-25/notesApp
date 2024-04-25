@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
         try {
-            const response = await fetch("http://localhost:4000/signupdata", {
+            const response = await fetch("https://notesapp-o3mu.onrender.com/signupdata", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     //displaying notes from database
 
     try{
-        const responseinbox = await fetch(`http://localhost:4000/getnotes/${encodeURIComponent(useremail)}`, {
+        const responseinbox = await fetch(`https://notesapp-o3mu.onrender.com/getnotes/${encodeURIComponent(useremail)}`, {
             method: "GET",
             headers: {
                 "content-Type": "application/json"
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const notes = notesInput.value;
 
         try{
-            const response = await fetch("http://localhost:4000/addnotes", {
+            const response = await fetch("https://notesapp-o3mu.onrender.com/addnotes", {
                 method: "POST",
                 headers: {
                     "content-Type": "application/json"
