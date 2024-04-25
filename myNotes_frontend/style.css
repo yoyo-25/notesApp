@@ -106,8 +106,8 @@ body{
     flex-direction: column;
 }
 .thirdcolm{
-    width: 64%;
-    height: 98%;
+    width: 100%;
+    height: 97%;
     border: 2px solid #5a5858;
     background-color: black;
     display: flex;
@@ -272,6 +272,49 @@ textarea#notes::-webkit-scrollbar {
     font-family: Google Sans, Helvetica Neue, sans-serif;
     word-wrap: break-word;
 }
-@media (max-width: 945px){
-
+.secondandthirdsec{
+    width: 84%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.forthirdsec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+}
+@media (max-width: 920px){
+    .homecontcard {
+        height: 100%;
+        width: 100%;
+        background-color: #302f2f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .firstcolm {
+        width: 100%;
+        height: 10%;
+        border: 2px solid #5a5858;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .firstcolmpositioning {
+        width: 100%;
+        height: 100%;
+    }
+    .useraccount {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
   }
