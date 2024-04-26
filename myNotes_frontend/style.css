@@ -344,4 +344,21 @@ textarea#notes::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
     }
+    .navbar {
+        width: 100%;
+        height: 10%;
+        background-color: #1a1919;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homecard {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
   }
