@@ -239,6 +239,12 @@ textarea#notes::placeholder {
     border-radius: 20px;
     color: whitesmoke;
 }
+.addnotesbtn :hover{
+    background-color:#bcb8b8;
+    color: black;
+    font-weight: bold;
+}
+
 textarea#notes::-webkit-scrollbar {
     display: none;
 }
