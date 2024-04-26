@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     //saving notes to database
 
     document.getElementById("notesdata").addEventListener("submit", async (event)=>{
+        event.preventDefault()
         const titleInput = document.getElementById("title")
         const notesInput = document.getElementById("notes")
         const title = titleInput.value;
