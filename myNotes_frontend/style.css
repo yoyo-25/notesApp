@@ -318,14 +318,8 @@ textarea#notes::-webkit-scrollbar {
         flex-wrap: wrap;
     }
     .secondandthirdsec {
-        width: 84%;
-        height: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .secondandthirdsec {
-        width: 84%;
-        height: 100%;
+        width: 100%;
+        height: 90%;
         display: flex;
         flex-direction: column-reverse;
         gap: 10px;
