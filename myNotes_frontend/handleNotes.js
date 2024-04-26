@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     //saving notes to database
 
-    document.getElementById("notesdata").addEventListener("submit", async ()=>{
+    document.getElementById("notesdata").addEventListener("submit", async (event)=>{
         const titleInput = document.getElementById("title")
         const notesInput = document.getElementById("notes")
         const title = titleInput.value;
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         } catch(error){
             console.log("error fetching data")
         }
-        return false
+
     })
 
 });
