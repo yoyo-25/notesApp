@@ -63,31 +63,35 @@ document.addEventListener("DOMContentLoaded", async () => {
         const notesInput = document.getElementById("notes")
         const title = titleInput.value;
         const notes = notesInput.value;
-
-        try{
-            const response = await fetch("https://notesapp-o3mu.onrender.com/addnotes", {
-                method: "POST",
-                headers: {
-                    "content-Type": "application/json"
-                },
-                body: JSON.stringify({ email: useremail, title, notes })
-            })
-            const data = await response.json()
-            const statuscode = data.statusCode
-            if(statuscode===201){
-                let displaynotesinhtml = ""
-                displaynotesinhtml = `
-                <div class="eachnotes">
-                    <div class="eachnotestitle">${title}</div>
-                    <div class="eachnotesdiscription">${notes}</div>
-                </div>`;
-                document.getElementById("notesbox").innerHTML += displaynotesinhtml
-            } else if(statuscode===500){
-                console.log("error saving notes")
+        if(!useremail){
+            window.location.href='login.html'
+        } else{
+            try{
+                const response = await fetch("https://notesapp-o3mu.onrender.com/addnotes", {
+                    method: "POST",
+                    headers: {
+                        "content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ email: useremail, title, notes })
+                })
+                const data = await response.json()
+                const statuscode = data.statusCode
+                if(statuscode===201){
+                    let displaynotesinhtml = ""
+                    displaynotesinhtml = `
+                    <div class="eachnotes">
+                        <div class="eachnotestitle">${title}</div>
+                        <div class="eachnotesdiscription">${notes}</div>
+                    </div>`;
+                    document.getElementById("notesbox").innerHTML += displaynotesinhtml
+                } else if(statuscode===500){
+                    console.log("error saving notes")
+                }
+            } catch(error){
+                console.log("error fetching data")
             }
-        } catch(error){
-            console.log("error fetching data")
         }
+        
 
     })
 
