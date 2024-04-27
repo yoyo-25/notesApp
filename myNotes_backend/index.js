@@ -11,7 +11,7 @@ const port = 4000;
 app.use(cors());
 const {User, usernotes} = require("./models/userschema");
 
-mongoose.connect("mongodb+srv://yogeshwar100004:moshinderu1325@cluster0.t4zg3as.mongodb.net/mynotes")
+mongoose.connect("mongodb+srv://yayo25:iamatomic123@cluster0.t4zg3as.mongodb.net/mynotes")
   .then(() => console.log("connected to database"))
   .catch((err) => console.error("error connecting to database", err));
 
