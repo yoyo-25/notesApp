@@ -7,11 +7,14 @@ const { parse } = require("querystring");
 const { log } = require("console");
 const cors = require("cors");
 const app = express();
+require('dotenv').config();
 const port = 4000;
 app.use(cors());
 const {User, usernotes} = require("./models/userschema");
+const dbName = process.env.DB_USER;
+const dbPassword = process.env.DB_PASSWORD;
 
-mongoose.connect("mongodb+srv://yayo25:iamatomic123@cluster0.t4zg3as.mongodb.net/mynotes")
+mongoose.connect(`mongodb+srv://${dbName}:${dbPassword}@cluster0.t4zg3as.mongodb.net/mynotes`)
   .then(() => console.log("connected to database"))
   .catch((err) => console.error("error connecting to database", err));
 
